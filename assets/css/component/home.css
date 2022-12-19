@@ -1,0 +1,96 @@
+.content{
+    display: flex;
+    height: 100vh;
+}
+/*------------------*
+# HOME CONTENT
+*------------------*/
+.home-content{
+    background-image: url(/assets/image/home-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    flex: 3;
+    margin-left: 460px;
+    padding: 100px 100px 70px 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*------------------*
+# OVERLAY
+*------------------*/
+.home-content .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+/*------------------*
+# PAGE CONTENT
+*------------------*/
+.home-content .page-content{
+    position: absolute;
+    color: var(--main-color-white);
+    z-index: 2;
+    white-space: nowrap;
+}
+.home-content .page-content .home-title{
+    text-align: center;
+}
+.home-content .page-content .name{
+    font-size: 3.5rem;
+}
+.home-content .page-content .fonctions{
+    font-size: 1.8rem;
+}
+.home-content .page-content ul{
+    padding: 0;
+}
+.home-content .page-content li{
+    font-size: 1.7rem;
+    list-style: none;
+}
+.home-content .page-content strong{
+    border-bottom: 3px solid var(--main-color);
+}
+/*------------------*
+# RESPONSIVE 
+*------------------*/
+@media screen and (max-width: 1180px) {
+    header{
+        display: block;
+    }
+    aside{
+        display: none;
+    }
+    .home-content{
+        margin-left: 0;
+    }
+  
+}
+@media screen and (max-width: 600px) {
+    .home-content .page-content .name{
+        font-size: 3rem;
+    }
+    .home-content .page-content .fonctions{
+        font-size: 1.7rem;
+    }
+    .home-content .page-content li{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .home-content .page-content .name{
+        font-size: 2.5rem;
+    }
+    .home-content .page-content .fonctions{
+        font-size: 1.4rem;
+    }
+    .home-content .page-content li{
+        font-size: 1.2rem;
+    }
+}

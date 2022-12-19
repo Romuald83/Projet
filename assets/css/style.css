@@ -1,0 +1,140 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: var(--main-color-like-white);
+}
+.container{
+    position: relative;
+}
+/*------------------*
+# HEADER
+*------------------*/
+header{
+    background-color: var(--main-color-white);
+    position: absolute;
+    padding: 5px 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.mobile-header{
+    width: 95%;
+    font-size: 1.5rem;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+/*------------------*
+# ASIDE
+*------------------*/
+aside{
+    background-color: var(--main-color-white);
+    flex: 1;
+    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 160px;
+    padding-top: 100px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 20;
+}
+/*------------------*
+# SIDEBAR TOP
+*------------------*/
+aside .sidebar-top img{
+    width: 150px;
+    border-radius: 100px;
+    border: 2px solid var(--main-color);
+}
+aside .sidebar-top .name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+aside .sidebar-top .fonction{
+    font-size: 1.3rem;
+    color: var(--main-color-gray);
+}
+/*------------------*
+# SIDEBAR NAV
+*------------------*/
+aside .sidebar-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+aside .sidebar-nav ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+aside .sidebar-nav li{
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 5px 0;
+    border-bottom: 0.1px solid var(--main-color-like-white);
+    cursor: pointer;
+}
+aside .sidebar-nav li:nth-child(1){
+    border-top: 0.1px solid var(--main-color-like-white);
+}
+aside .sidebar-nav li:hover{
+    border-right: 3px solid var(--main-color);
+    font-weight: bold;
+    color: var(--main-color);
+}
+/*------------------*
+# SIDEBAR BOTTOM
+*------------------*/
+aside .sidebar-bottom{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+aside .sidebar-bottom .social-icon-item{
+    background-color: var(--main-color-like-white);
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--main-color-gray);
+    border-radius: 5px;
+    cursor: pointer;
+}
+aside .sidebar-bottom i{
+    font-size: 1.3rem;
+    line-height: 40px;
+    color: var(--main-color-gray);
+}
+aside .sidebar-bottom i:hover{
+    color: var(--main-color);
+}
+/*------------------*
+# PAGE TITLE
+*------------------*/
+.content .page-title{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    left: 0px;
+}
+.content .page-title .title{
+    padding: 5px 10px 5px 100px;
+    background-color: var(--main-color);
+    color: var(--main-color-white);
+    font-size: 1.5rem;
+}
+.content .page-title p{
+    font-size: 1.2rem;
+    color: var(--main-color-gray);
+}
+
+
+
+
+
+
